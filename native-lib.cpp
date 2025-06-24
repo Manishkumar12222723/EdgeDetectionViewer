@@ -8,6 +8,5 @@ Java_com_example_edgeviewer_NativeBridge_processFrame(JNIEnv *env, jobject, jbyt
     cv::cvtColor(yuv, bgr, cv::COLOR_YUV2BGR_NV21);
     cv::Mat edges;
     cv::Canny(bgr, edges, 50, 150);
-    // Store edges to a shared texture or buffer
     env->ReleaseByteArrayElements(frameData, data, 0);
 }
