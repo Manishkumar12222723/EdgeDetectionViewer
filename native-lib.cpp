@@ -1,5 +1,5 @@
 
-extern "C"
+
 JNIEXPORT void JNICALL
 Java_com_example_edgeviewer_NativeBridge_processFrame(JNIEnv *env, jobject, jbyteArray frameData, jint width, jint height) {
     jbyte* data = env->GetByteArrayElements(frameData, nullptr);
