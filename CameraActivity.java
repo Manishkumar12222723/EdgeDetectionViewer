@@ -1,7 +1,7 @@
 
 public class CameraActivity extends AppCompatActivity implements TextureView.SurfaceTextureListener {
     static {
-        System.loadLibrary("native-lib"); // Load your C++ library
+        System.loadLibrary("native-lib"); 
     }
 
     private native void processFrame(byte[] frameData, int width, int height);
@@ -9,5 +9,5 @@ public class CameraActivity extends AppCompatActivity implements TextureView.Sur
     private CameraDevice cameraDevice;
     private TextureView textureView;
 
-    // Setup TextureView, CameraManager, and preview capture session
+ 
 }
